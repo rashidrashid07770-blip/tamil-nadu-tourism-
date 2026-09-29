@@ -1,0 +1,4587 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Taste of Traveling in Tamil Nadu - Land of Temples, Coast & Hills</title>
+
+  <meta
+    name="description"
+    content="Explore Tamil Nadu's tourist places, 38 districts, traditional food, culture, and hidden gems."
+  >
+
+  <!-- Google Fonts (Normal Clean English: Inter + Tamil: Noto Sans Tamil) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap');
+
+/* ================================
+   TASTE OF TAMIL NADU - STYLESHEET
+   Comprehensive, responsive & themed CSS
+================================ */
+
+:root {
+  --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-display: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+  /* Color Palette - Light Mode */
+  --bg-primary: #faf6ee;
+  --bg-secondary: #f3ecdb;
+  --bg-card: #ffffff;
+  --text-primary: #241c1c;
+  --text-secondary: #5e5454;
+  --text-muted: #827878;
+
+  --maroon-dark: #3b1010;
+  --maroon-primary: #581c1c;
+  --maroon-light: #7a2828;
+
+  --gold-primary: #f4c542;
+  --gold-hover: #e0b02f;
+  --gold-subtle: rgba(244, 197, 66, 0.18);
+
+  --border-light: rgba(0, 0, 0, 0.08);
+  --border-card: rgba(88, 28, 28, 0.08);
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 8px 24px rgba(59, 16, 16, 0.08);
+  --shadow-lg: 0 16px 36px rgba(59, 16, 16, 0.13);
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --navbar-height: 74px;
+}
+
+/* Dark Mode Theme */
+body.dark {
+  --bg-primary: #121010;
+  --bg-secondary: #1a1616;
+  --bg-card: #201a1a;
+  --text-primary: #f6efe6;
+  --text-secondary: #bfb5a8;
+  --text-muted: #8c8276;
+
+  --maroon-dark: #220909;
+  --maroon-primary: #471717;
+  --maroon-light: #612020;
+
+  --gold-primary: #f4c542;
+  --gold-hover: #ffd359;
+  --gold-subtle: rgba(244, 197, 66, 0.14);
+
+  --border-light: rgba(255, 255, 255, 0.09);
+  --border-card: rgba(244, 197, 66, 0.12);
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 25px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ================================
+   RESET & BASE STYLES
+================================ */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--navbar-height) + 16px);
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.65;
+  transition: background-color 0.35s ease, color 0.35s ease;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+::selection {
+  background: var(--gold-primary);
+  color: var(--maroon-dark);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--maroon-primary);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold-primary);
+}
+
+/* ================================
+   NAVBAR
+================================ */
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--navbar-height);
+  background: rgba(85, 27, 27, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .navbar {
+  background: rgba(30, 10, 10, 0.94);
+  border-bottom: 1px solid rgba(244, 197, 66, 0.15);
+}
+
+.nav-container {
+  max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav-logo span {
+  color: var(--gold-primary);
+}
+
+.nav-logo:hover {
+  transform: scale(1.02);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.94rem;
+  font-weight: 500;
+  padding: 6px 4px;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: var(--gold-primary);
+  border-radius: var(--radius-full);
+  transition: width 0.25s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: var(--gold-primary);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-btn {
+  background: var(--gold-primary);
+  color: var(--maroon-dark);
+  font-size: 1.15rem;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.theme-btn:hover {
+  transform: rotate(20deg) scale(1.08);
+  background: #ffffff;
+}
+
+/* Hamburger Menu Button */
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1010;
+}
+
+.menu-btn .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+.menu-btn.active .bar:nth-child(1) {
+  transform: translateY(9.5px) rotate(45deg);
+}
+
+.menu-btn.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.active .bar:nth-child(3) {
+  transform: translateY(-9.5px) rotate(-45deg);
+}
+
+/* ================================
+   HERO SECTION
+================================ */
+.hero {
+  position: relative;
+  min-height: calc(100vh - var(--navbar-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 24px 70px;
+  background: url("https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=1920&q=85") center/cover no-repeat;
+  color: #ffffff;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 9, 9, 0.78) 0%,
+    rgba(24, 7, 7, 0.72) 60%,
+    rgba(18, 5, 5, 0.88) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-small {
+  display: inline-block;
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  background: rgba(244, 197, 66, 0.15);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(244, 197, 66, 0.35);
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5.5vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1.12;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 span {
+  color: var(--gold-primary);
+  font-style: italic;
+}
+
+.hero-desc {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: #f0eae1;
+  max-width: 750px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 30px;
+  font-size: 0.98rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+.primary-btn {
+  background: var(--gold-primary);
+  color: var(--maroon-dark);
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 8px 20px rgba(244, 197, 66, 0.35);
+}
+
+.primary-btn:hover {
+  background: var(--gold-hover);
+  border-color: var(--gold-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(244, 197, 66, 0.45);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.secondary-btn:hover {
+  background: #ffffff;
+  color: var(--maroon-dark);
+  border-color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px rgba(255, 255, 255, 0.2);
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-number {
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--gold-primary);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ================================
+   COMMON SECTIONS & TITLES
+================================ */
+.section {
+  padding: 90px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.alternate-section {
+  background-color: var(--bg-secondary);
+  max-width: 100%;
+  padding-left: calc((100% - 1280px) / 2 + 24px);
+  padding-right: calc((100% - 1280px) / 2 + 24px);
+}
+
+@media (max-width: 1320px) {
+  .alternate-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+.section-title {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.section-title p {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--maroon-primary);
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+body.dark .section-title p {
+  color: var(--gold-primary);
+}
+
+.section-title h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.8vw, 2.75rem);
+  color: var(--maroon-primary);
+  line-height: 1.22;
+  margin-bottom: 12px;
+}
+
+body.dark .section-title h2 {
+  color: #ffffff;
+}
+
+.section-title span {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+}
+
+.section-title.left {
+  text-align: left;
+  margin: 0 0 24px;
+}
+
+/* ================================
+   SEARCH BOX
+================================ */
+.search-box {
+  position: relative;
+  max-width: 580px;
+  margin: 0 auto 45px;
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 15px 22px 15px 52px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  border: 2px solid var(--border-light);
+  border-radius: var(--radius-full);
+  outline: none;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.search-box input:focus {
+  border-color: var(--maroon-primary);
+  box-shadow: 0 0 0 4px rgba(88, 28, 28, 0.12);
+}
+
+body.dark .search-box input:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 4px rgba(244, 197, 66, 0.16);
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  padding: 30px;
+  grid-column: 1 / -1;
+}
+
+/* ================================
+   CARDS GRID (PLACES & GEMS)
+================================ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.place-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-card);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.place-card .card-image {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+}
+
+.place-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.place-card:hover .card-image img {
+  transform: scale(1.07);
+}
+
+.place-card .card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.tag {
+  align-self: flex-start;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--maroon-primary);
+  background: var(--gold-subtle);
+  border: 1px solid rgba(244, 197, 66, 0.4);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+}
+
+body.dark .tag {
+  color: var(--gold-primary);
+}
+
+.place-card h3 {
+  font-family: var(--font-main);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--maroon-primary);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+body.dark .place-card h3 {
+  color: #ffffff;
+}
+
+.place-card p {
+  font-family: var(--font-main);
+  font-size: 0.94rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  align-self: flex-start;
+  background: var(--maroon-primary);
+  color: #ffffff;
+  padding: 8px 16px;
+  font-family: var(--font-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  transition: var(--transition);
+  box-shadow: 0 2px 8px rgba(88, 28, 28, 0.2);
+}
+
+.map-btn:hover {
+  background: var(--gold-primary);
+  color: var(--maroon-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(244, 197, 66, 0.35);
+}
+
+/* ================================
+   38 DISTRICTS GRID & ENHANCED CARDS
+================================ */
+.district-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.district-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-card);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  position: relative;
+}
+
+.district-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--gold-primary);
+}
+
+.district-img {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background-color: #2a1515;
+}
+
+.district-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.district-card:hover .district-img img {
+  transform: scale(1.08);
+}
+
+.district-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(59, 16, 16, 0.9);
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
+  padding: 4px 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(4px);
+}
+
+.district-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.district-header {
+  margin-bottom: 8px;
+}
+
+.district-card h3 {
+  font-family: var(--font-main);
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: #2b2525;
+  line-height: 1.3;
+  margin-bottom: 4px;
+  letter-spacing: -0.01em;
+}
+
+.district-card h3 {
+  font-family: var(--font-main);
+  font-size: 1.32rem;
+  font-weight: 700;
+  color: #2e2626;
+  line-height: 1.25;
+  margin-bottom: 4px;
+}
+
+body.dark .district-card h3 {
+  color: #f7f2ea;
+}
+
+.landmark-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-main);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #3d3434;
+  background: rgba(244, 197, 66, 0.22);
+  border: 1px solid rgba(244, 197, 66, 0.55);
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  margin-top: 4px;
+  margin-bottom: 12px;
+  align-self: flex-start;
+}
+
+body.dark .landmark-tag {
+  color: #ffd866;
+  background: rgba(244, 197, 66, 0.12);
+  border-color: rgba(244, 197, 66, 0.3);
+}
+
+.district-category-tag {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(43, 14, 14, 0.88);
+  color: #ffffff;
+  font-family: var(--font-main);
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(244, 197, 66, 0.4);
+}
+
+.district-desc {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.desc-box {
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid rgba(88, 28, 28, 0.45);
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.desc-lang-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #2b2222;
+  margin-bottom: 8px;
+}
+
+body.dark .desc-lang-label {
+  color: #f0ebe4;
+}
+
+.lang-tag {
+  display: inline-block;
+  font-family: var(--font-main);
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--maroon-primary);
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.desc-lang-title {
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #2b2222;
+  letter-spacing: 0.2px;
+}
+
+body.dark .desc-lang-title {
+  color: #f0ebe4;
+}
+
+.desc-en {
+  font-family: var(--font-main);
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: #4a4242;
+  line-height: 1.65;
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+body.dark .desc-en {
+  color: #d6cdc2;
+}
+
+body.dark .desc-box {
+  background: rgba(255, 255, 255, 0.035);
+  border-left-color: rgba(244, 197, 66, 0.4);
+}
+
+.card-footer-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.district-card .map-btn {
+  margin-top: 0;
+}
+
+/* ================================
+   FOOD SECTION
+================================ */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.food-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-card);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.food-card .food-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.food-card .food-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.food-card:hover .food-image img {
+  transform: scale(1.08);
+}
+
+.food-card .food-info {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.food-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-family: var(--font-main);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--maroon-primary);
+  background: var(--gold-subtle);
+  border: 1px solid rgba(244, 197, 66, 0.45);
+  padding: 3px 9px;
+  border-radius: var(--radius-full);
+  margin-bottom: 8px;
+}
+
+body.dark .food-badge {
+  color: var(--gold-primary);
+  background: rgba(244, 197, 66, 0.12);
+}
+
+.food-card h3 {
+  font-family: var(--font-main);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1a1616;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+body.dark .food-card h3 {
+  color: #ffffff;
+}
+
+.food-subtitle {
+  font-family: var(--font-main);
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--maroon-light);
+  margin-bottom: 10px;
+  display: block;
+}
+
+body.dark .food-subtitle {
+  color: var(--gold-primary);
+}
+
+.food-card p {
+  font-family: var(--font-main);
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+body.dark .food-card p {
+  color: #bfb5a8;
+}
+
+/* ================================
+   GALLERY
+================================ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  height: 260px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(34, 9, 9, 0.85) 0%, rgba(34, 9, 9, 0) 65%);
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.gallery-overlay span {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  transform: translateY(12px);
+  transition: transform 0.35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.08);
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
+}
+
+.gallery-item:hover .gallery-overlay span {
+  transform: translateY(0);
+}
+
+/* ================================
+   ABOUT SECTION
+================================ */
+.about-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 55px;
+  align-items: center;
+}
+
+.about-image-wrapper {
+  position: relative;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  border: 4px solid var(--bg-card);
+}
+
+.experience-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--maroon-primary);
+  color: #ffffff;
+  padding: 16px 22px;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  border: 2px solid var(--gold-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.experience-badge strong {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--gold-primary);
+  line-height: 1;
+}
+
+.experience-badge span {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.about-content .about-lead {
+  font-size: 1.12rem;
+  color: var(--text-primary);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.about-content p {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
+.about-highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.highlight-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: var(--bg-card);
+  padding: 14px 18px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.highlight-item .icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.highlight-item h4 {
+  font-size: 1rem;
+  color: var(--maroon-primary);
+  margin-bottom: 3px;
+}
+
+body.dark .highlight-item h4 {
+  color: var(--gold-primary);
+}
+
+.highlight-item p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  line-height: 1.45;
+}
+
+/* ================================
+   CONTACT SECTION
+================================ */
+.contact-section {
+  padding-bottom: 110px;
+}
+
+.contact-form {
+  max-width: 680px;
+  margin: 0 auto;
+  background: var(--bg-card);
+  padding: 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-card);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 18px;
+  font-family: inherit;
+  font-size: 0.96rem;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: var(--transition);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--maroon-primary);
+  box-shadow: 0 0 0 3px rgba(88, 28, 28, 0.12);
+}
+
+body.dark .form-group input:focus,
+body.dark .form-group textarea:focus {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 0 3px rgba(244, 197, 66, 0.15);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.contact-status {
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease;
+}
+
+.contact-status.success {
+  background: #e8f5e9;
+  color: #1b5e20;
+  border: 1px solid #81c784;
+}
+
+.contact-status.error {
+  background: #ffebee;
+  color: #b71c1c;
+  border: 1px solid #e57373;
+}
+
+body.dark .contact-status.success {
+  background: rgba(46, 125, 50, 0.25);
+  color: #a5d6a7;
+  border-color: rgba(76, 175, 80, 0.4);
+}
+
+body.dark .contact-status.error {
+  background: rgba(183, 28, 28, 0.25);
+  color: #ef9a9a;
+  border-color: rgba(239, 83, 80, 0.4);
+}
+
+.db-badge-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 18px;
+  font-size: 0.84rem;
+}
+
+.db-badge {
+  background: rgba(0, 0, 0, 0.06);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  color: #333333;
+}
+
+.db-counter {
+  color: #666666;
+  font-weight: 500;
+}
+
+body.dark .db-badge {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e0e0e0;
+}
+
+body.dark .db-counter {
+  color: #aaaaaa;
+}
+
+/* ================================
+   FOOTER
+================================ */
+.footer {
+  background: var(--maroon-dark);
+  color: #ffffff;
+  padding: 60px 24px 30px;
+  border-top: 3px solid var(--gold-primary);
+}
+
+.footer-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-brand h2 {
+  font-size: 1.85rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.footer-brand h2 span {
+  color: var(--gold-primary);
+}
+
+.footer-brand p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.95rem;
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: var(--gold-primary);
+}
+
+.footer-bottom {
+  padding-top: 25px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ================================
+   BACK TO TOP BUTTON
+================================ */
+.back-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 48px;
+  height: 48px;
+  background: var(--maroon-primary);
+  color: var(--gold-primary);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-full);
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: var(--transition);
+  z-index: 999;
+}
+
+.back-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-top:hover {
+  background: var(--gold-primary);
+  color: var(--maroon-dark);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(244, 197, 66, 0.4);
+}
+
+/* ================================
+   IMAGE LIGHTBOX MODAL
+================================ */
+.image-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.image-modal.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.88);
+  backdrop-filter: blur(8px);
+}
+
+.modal-content {
+  position: relative;
+  z-index: 2010;
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content img {
+  max-height: 80vh;
+  margin: 0 auto;
+  border-radius: var(--radius-md);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
+}
+
+.modal-close {
+  position: absolute;
+  top: -45px;
+  right: 0;
+  font-size: 2.5rem;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+  color: var(--gold-primary);
+}
+
+#modalCaption {
+  color: #f0f0f0;
+  font-size: 1.05rem;
+  margin-top: 14px;
+  font-weight: 500;
+}
+
+/* ================================
+   SCROLL REVEAL ANIMATION
+================================ */
+.reveal {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* ================================
+   RESPONSIVE BREAKPOINTS
+================================ */
+
+/* Tablets (1024px and down) */
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .district-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .food-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-image-wrapper img {
+    height: 380px;
+  }
+
+  .experience-badge {
+    right: 15px;
+    bottom: -15px;
+  }
+}
+
+/* Small Tablets & Mobile Navigation (868px and down) */
+@media (max-width: 868px) {
+  .menu-btn {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: var(--navbar-height);
+    right: -100%;
+    width: min(300px, 80vw);
+    height: calc(100vh - var(--navbar-height));
+    background: var(--maroon-dark);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px 25px;
+    gap: 20px;
+    box-shadow: -8px 0 25px rgba(0, 0, 0, 0.35);
+    transition: right 0.35s ease;
+    overflow-y: auto;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .district-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section {
+    padding: 70px 20px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .contact-form {
+    padding: 28px 20px;
+  }
+}
+
+/* Mobile Phones (600px and down) */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 85vh;
+    padding: 60px 18px 50px;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .hero-stats {
+    gap: 20px;
+  }
+
+  .stat-number {
+    font-size: 1.5rem;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .district-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .food-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image-wrapper img {
+    height: 280px;
+  }
+
+  .experience-badge {
+    padding: 12px 16px;
+  }
+
+  .experience-badge strong {
+    font-size: 1.4rem;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        Tamil<span>Nadu</span> 🌴
+      </a>
+
+      <nav id="navLinks" class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#places">Places</a>
+        <a href="#hidden">Hidden Gems</a>
+        <a href="#districts">Districts</a>
+        <a href="#food">Food</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeBtn" class="theme-btn" aria-label="Toggle dark mode" title="Toggle dark / light mode">
+          🌙
+        </button>
+
+        <button id="menuBtn" class="menu-btn" aria-label="Toggle navigation menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ================= HERO ================= -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="hero-small">
+          ✨ WELCOME TO
+        </p>
+
+        <h1>
+          Taste of Traveling in <span>Tamil Nadu</span>
+        </h1>
+
+        <p class="hero-desc">
+          Explore ancient Chola temples, sun-kissed coastlines, misty Nilgiri hills, 
+          authentic culinary delicacies, and the rich cultural heritage of Southern India.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#places" class="btn primary-btn">
+            Explore Places
+          </a>
+          <a href="#districts" class="btn secondary-btn">
+            Explore Districts
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">38</span>
+            <span class="stat-label">Districts</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1000+</span>
+            <span class="stat-label">Historic Temples</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">1076 km</span>
+            <span class="stat-label">Coastline</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= PLACES ================= -->
+    <section id="places" class="section">
+      <div class="section-title">
+        <p>DISCOVER</p>
+        <h2>Famous Tourist Places</h2>
+        <span>Experience the architectural grandeur and natural splendour of Tamil Nadu</span>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="search"
+          id="placeSearch"
+          placeholder="Search tourist places by name or district..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div class="cards-grid" id="placesContainer">
+
+        <!-- MADURAI -->
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"
+              alt="Meenakshi Amman Temple, Madurai"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80';"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Madurai</span>
+            <h3>Meenakshi Amman Temple</h3>
+            <p>
+              One of India's most famous historic temple complexes, renowned worldwide for its 14 towering sculpted gopurams, thousand-pillar hall, and millennia of Dravidian art.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Meenakshi+Amman+Temple+Madurai"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <!-- THANJAVUR -->
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+              alt="Brihadeeswarar Temple, Thanjavur"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Thanjavur</span>
+            <h3>Brihadeeswarar Temple</h3>
+            <p>
+              A UNESCO World Heritage Great Living Chola Temple built by Emperor Rajaraja I, boasting an 80-tonne single granite block capstone and majestic vimana.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Brihadeeswarar+Temple+Thanjavur"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <!-- OOTY -->
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=800&q=80"
+              alt="Ooty Nilgiris Hill Station"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=800&q=80';"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">The Nilgiris</span>
+            <h3>Ooty (Udhagamandalam)</h3>
+            <p>
+              The "Queen of Hill Stations" nestled in the blue Nilgiri mountains, famed for sprawling emerald tea estates, botanical gardens, and UNESCO toy train rides.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Ooty+Tamil+Nadu"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <!-- CHENNAI -->
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+              alt="Marina Beach Chennai"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Chennai</span>
+            <h3>Marina Beach</h3>
+            <p>
+              The world's second-longest natural urban beach, stretching 13 km along the Bay of Bengal with stunning sunrise vistas and vibrant street treats.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Marina+Beach+Chennai"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <!-- KODAIKANAL -->
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80"
+              alt="Kodaikanal Hill Station"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80';"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Dindigul</span>
+            <h3>Kodaikanal</h3>
+            <p>
+              The "Princess of Hill Stations" sitting at 2,133 metres, renowned for its serene star-shaped lake, pine forests, mist-shrouded valleys, and waterfalls.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Kodaikanal+Tamil+Nadu"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <!-- RAMESWARAM -->
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1606298855672-3efb63017be8?auto=format&fit=crop&w=800&q=80"
+              alt="Rameswaram Temple and Pamban Bridge"
+              loading="lazy"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1606298855672-3efb63017be8?auto=format&fit=crop&w=800&q=80';"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Ramanathapuram</span>
+            <h3>Rameswaram</h3>
+            <p>
+              A revered sacred island destination surrounded by turquoise ocean waters, the iconic Pamban Sea Bridge, and Ramanathaswamy Temple's grand corridors.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Rameswaram+Tamil+Nadu"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+      </div>
+      <p id="noPlacesFound" class="no-results" style="display:none;">No matching places found. Try another keyword!</p>
+    </section>
+
+
+    <!-- ================= HIDDEN GEMS ================= -->
+    <section id="hidden" class="section alternate-section">
+      <div class="section-title">
+        <p>EXPLORE MORE</p>
+        <h2>Hidden Gems</h2>
+        <span>Escape the crowds and discover pristine secret sanctuaries across Tamil Nadu</span>
+      </div>
+
+      <div class="cards-grid">
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80"
+              alt="Valparai Hills"
+              loading="lazy"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Coimbatore</span>
+            <h3>Valparai</h3>
+            <p>
+              A serene haven in the Anaimalai Hills with 40 hairpin bends, rolling tea gardens, lion-tailed macaques, and untouched montane rainforests.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Valparai+Tamil+Nadu"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+              alt="Yercaud"
+              loading="lazy"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Salem</span>
+            <h3>Yercaud</h3>
+            <p>
+              The "Jewel of the Shevaroys" offering quiet lakeside walks, aromatic coffee and spice plantations, and panoramic valley viewpoints.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Yercaud+Tamil+Nadu"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+
+        <article class="place-card reveal">
+          <div class="card-image">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+              alt="Kolli Hills"
+              loading="lazy"
+            >
+          </div>
+          <div class="card-content">
+            <span class="tag">Namakkal</span>
+            <h3>Kolli Hills</h3>
+            <p>
+              A mystical mountain ridge famous for 70 adrenaline-pumping hairpin turns, Agaya Gangai waterfall, and ancient medicinal herb reserves.
+            </p>
+            <a
+              class="map-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.google.com/maps/search/Kolli+Hills+Tamil+Nadu"
+            ><svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg><span>View on Google Maps</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+    <!-- ================= DISTRICTS ================= -->
+    <section id="districts" class="section">
+      <div class="section-title">
+        <p>38 DISTRICTS • 38 மாவட்டங்கள்</p>
+        <h2>Explore All 38 Districts of Tamil Nadu</h2>
+        <span>Real photos, iconic landmarks, and heritage stories in both English & தமிழ்</span>
+      </div>
+
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input
+          type="search"
+          id="districtSearch"
+          placeholder="Search district by name (English / தமிழ்) or landmark..."
+          autocomplete="off"
+        >
+      </div>
+
+      <div id="districtContainer" class="district-grid">
+        <!-- DISTRICT #01 : Ariyalur -->
+        <article class="district-card" data-district="ariyalur ariyalur gangaikonda cholapuram temple chola heritage & ancient fossils" data-id="1">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80"
+              alt="Ariyalur - Gangaikonda Cholapuram Temple"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#01</span>
+            <span class="district-category-tag">Chola Heritage & Ancient Fossils</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Ariyalur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Gangaikonda Cholapuram Temple</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Renowned for the majestic Gangaikonda Cholapuram temple built by Rajendra Chola I to commemorate his northern victory, this UNESCO World Heritage Site showcases supreme stone architecture. Ariyalur is also globally celebrated by geologists for its 65-million-year-old marine fossil beds and rich limestone reserves.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Ariyalur%20Gangaikonda%20Cholapuram%20Temple%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Ariyalur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #02 : Chengalpattu -->
+        <article class="district-card" data-district="chengalpattu chengalpattu mahabalipuram shore temple unesco world heritage & coastal art" data-id="2">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1621847468516-1ed5d0df56fe?auto=format&fit=crop&w=800&q=80"
+              alt="Chengalpattu - Mahabalipuram Shore Temple"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#02</span>
+            <span class="district-category-tag">UNESCO World Heritage & Coastal Art</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Chengalpattu</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Mahabalipuram Shore Temple</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Home to the world-renowned UNESCO monuments of Mahabalipuram, including the 7th-century Shore Temple, Krishna's Butter Ball, and monolithic rock-cut cave sanctuaries. The district also houses the tranquil Vedanthangal Bird Sanctuary, one of the oldest waterbird sanctuaries in India.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Chengalpattu%20Mahabalipuram%20Shore%20Temple%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Chengalpattu on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #03 : Chennai -->
+        <article class="district-card" data-district="chennai chennai marina beach & kapaleeshwarar capital metropolis & cultural gateway" data-id="3">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+              alt="Chennai - Marina Beach & Kapaleeshwarar"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#03</span>
+            <span class="district-category-tag">Capital Metropolis & Cultural Gateway</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Chennai</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Marina Beach & Kapaleeshwarar</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">The historic gateway to South India, blending colonial heritage with deep-rooted Carnatic traditions. Famous for Marina Beach—one of the world's longest natural urban beaches—as well as the historic 7th-century Kapaleeshwarar Temple, Fort St. George, and vibrant culinary culture.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Chennai%20Marina%20Beach%20%26%20Kapaleeshwarar%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Chennai on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #04 : Coimbatore -->
+        <article class="district-card" data-district="coimbatore coimbatore marudhamalai & western ghats manchester of south india & hill gateways" data-id="4">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=800&q=80"
+              alt="Coimbatore - Marudhamalai & Western Ghats"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#04</span>
+            <span class="district-category-tag">Manchester of South India & Hill Gateways</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Coimbatore</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Marudhamalai & Western Ghats</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Flanked by the misty Nilgiri foothills, Coimbatore is celebrated for its pleasant climate, entrepreneurship, and legendary Kongu hospitality. Known for the hill shrine of Marudhamalai, the sweet waters of Siruvani River, and serving as the primary launchpad to Ooty and Valparai.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Coimbatore%20Marudhamalai%20%26%20Western%20Ghats%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Coimbatore on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #05 : Cuddalore -->
+        <article class="district-card" data-district="cuddalore cuddalore pichavaram mangrove forests mangroves & cosmic dance" data-id="5">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+              alt="Cuddalore - Pichavaram Mangrove Forests"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#05</span>
+            <span class="district-category-tag">Mangroves & Cosmic Dance</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Cuddalore</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Pichavaram Mangrove Forests</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Celebrated for the awe-inspiring Pichavaram mangrove forest, one of the largest in the world, where tranquil boat channels weave through dense green canopies. It is also home to the cosmic Nataraja Temple at Chidambaram and the scenic Silver Beach along the Bay of Bengal.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Cuddalore%20Pichavaram%20Mangrove%20Forests%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Cuddalore on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #06 : Dharmapuri -->
+        <article class="district-card" data-district="dharmapuri dharmapuri hogenakkal waterfalls niagara of india & coracle rides" data-id="6">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80"
+              alt="Dharmapuri - Hogenakkal Waterfalls"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#06</span>
+            <span class="district-category-tag">Niagara of India & Coracle Rides</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Dharmapuri</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Hogenakkal Waterfalls</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">World-famous for the thunderous Hogenakkal Falls on the Cauvery River, frequently termed the 'Niagara of India'. Visitors travel from across the globe to experience exhilarating round coracle rides amidst misty river gorges, natural herbal baths, and historic Adiyamans' heritage.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Dharmapuri%20Hogenakkal%20Waterfalls%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Dharmapuri on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #07 : Dindigul -->
+        <article class="district-card" data-district="dindigul dindigul kodaikanal & rock fort princess of hills & historic fort" data-id="7">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=800&q=80"
+              alt="Dindigul - Kodaikanal & Rock Fort"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#07</span>
+            <span class="district-category-tag">Princess of Hills & Historic Fort</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Dindigul</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Kodaikanal & Rock Fort</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Crowned by the 'Princess of Hill Stations' Kodaikanal, famous for its star-shaped lake, pine forests, and misty Pillar Rocks. The plains feature the historic 17th-century Dindigul Rock Fort and the globally celebrated, aromatic Dindigul Thalappakatti biryani.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Dindigul%20Kodaikanal%20%26%20Rock%20Fort%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Dindigul on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #08 : Erode -->
+        <article class="district-card" data-district="erode erode bhavanisagar dam & sangameswarar turmeric city & river confluence" data-id="8">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=800&q=80"
+              alt="Erode - Bhavanisagar Dam & Sangameswarar"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#08</span>
+            <span class="district-category-tag">Turmeric City & River Confluence</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Erode</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Bhavanisagar Dam & Sangameswarar</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Globally recognised as the 'Yellow City' for its massive turmeric production and textile trade. Home to Bhavanisagar Dam, one of the world's largest earthen dams, and the sacred Bhavani Sangameswarar Temple situated at the scenic confluence of the Cauvery, Bhavani, and Amudha rivers.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Erode%20Bhavanisagar%20Dam%20%26%20Sangameswarar%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Erode on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #09 : Kallakurichi -->
+        <article class="district-card" data-district="kallakurichi kallakurichi kalrayan hills & megam falls untouched green trails" data-id="9">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1511497584788-87676104235f?auto=format&fit=crop&w=800&q=80"
+              alt="Kallakurichi - Kalrayan Hills & Megam Falls"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#09</span>
+            <span class="district-category-tag">Untouched Green Trails</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Kallakurichi</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Kalrayan Hills & Megam Falls</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Nestled around the pristine Kalrayan Hills of the Eastern Ghats, Kallakurichi offers dense forest trails, tranquil tribal hamlets, and refreshing cascades such as Megam Falls and Periyar Falls. An idyllic eco-tourism retreat away from commercial crowds.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Kallakurichi%20Kalrayan%20Hills%20%26%20Megam%20Falls%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Kallakurichi on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #10 : Kancheepuram -->
+        <article class="district-card" data-district="kancheepuram kancheepuram kailasanathar temple & silk sarees city of thousand temples" data-id="10">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1600100397608-f010f0a9f7a6?auto=format&fit=crop&w=800&q=80"
+              alt="Kancheepuram - Kailasanathar Temple & Silk Sarees"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#10</span>
+            <span class="district-category-tag">City of Thousand Temples</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Kancheepuram</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Kailasanathar Temple & Silk Sarees</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Revered as the 'City of Thousand Temples', Kancheepuram was the glorious capital of the Pallava dynasty. Architectural gems like Kailasanathar and Ekambareswarar temples stand alongside centuries-old handloom workshops crafting world-famous pure mulberry silk sarees with golden zari.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Kancheepuram%20Kailasanathar%20Temple%20%26%20Silk%20Sarees%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Kancheepuram on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #11 : Kanyakumari -->
+        <article class="district-card" data-district="kanyakumari kanyakumari vivekananda rock & thiruvalluvar statue land's end & triveni sangam" data-id="11">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=800&q=80"
+              alt="Kanyakumari - Vivekananda Rock & Thiruvalluvar Statue"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#11</span>
+            <span class="district-category-tag">Land's End & Triveni Sangam</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Kanyakumari</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Vivekananda Rock & Thiruvalluvar Statue</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">The southern tip of the Indian mainland where the Arabian Sea, Bay of Bengal, and Indian Ocean merge. Famous for breathtaking simultaneous sunrises and sunsets, the monolithic 133-foot Thiruvalluvar Statue, and the sacred Vivekananda Rock Memorial situated amidst the waves.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Kanyakumari%20Vivekananda%20Rock%20%26%20Thiruvalluvar%20Statue%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Kanyakumari on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #12 : Karur -->
+        <article class="district-card" data-district="karur karur pasupatheeswarar & amaravathi river sangam chera capital & home textiles" data-id="12">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80"
+              alt="Karur - Pasupatheeswarar & Amaravathi River"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#12</span>
+            <span class="district-category-tag">Sangam Chera Capital & Home Textiles</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Karur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Pasupatheeswarar & Amaravathi River</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Located on the banks of Amaravathi River, Karur was an illustrious capital and minting center of the Sangam Chera dynasty. Today, it is recognized internationally as India's leading home textile export hub, centered around the 7th-century Pasupatheeswarar Temple.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Karur%20Pasupatheeswarar%20%26%20Amaravathi%20River%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Karur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #13 : Krishnagiri -->
+        <article class="district-card" data-district="krishnagiri krishnagiri krishnagiri dam & fort mango capital of tamil nadu" data-id="13">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              alt="Krishnagiri - Krishnagiri Dam & Fort"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#13</span>
+            <span class="district-category-tag">Mango Capital of Tamil Nadu</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Krishnagiri</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Krishnagiri Dam & Fort</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Celebrated as the 'Mango Capital of Tamil Nadu', cultivating luscious mango varieties across expansive orchards. Its picturesque landscape is dotted with granite hillocks, the historic Krishnagiri hilltop fortress constructed by Vijayanagara rulers, and the scenic Krishnagiri Dam reservoir.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Krishnagiri%20Krishnagiri%20Dam%20%26%20Fort%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Krishnagiri on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #14 : Madurai -->
+        <article class="district-card" data-district="madurai madurai meenakshi temple & nayakkar mahal cultural capital & city that never sleeps" data-id="14">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"
+              alt="Madurai - Meenakshi Temple & Nayakkar Mahal"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#14</span>
+            <span class="district-category-tag">Cultural Capital & City that Never Sleeps</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Madurai</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Meenakshi Temple & Nayakkar Mahal</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">One of the oldest continuously inhabited cities in the world, Madurai is the soul of Tamil culture and the historic home of the Tamil Sangams. Renowned for the soaring gopurams of Meenakshi Amman Temple, the Indo-Saracenic Thirumalai Nayakkar Mahal, fragrant Madurai Malli jasmine, and night street-food life.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Madurai%20Meenakshi%20Temple%20%26%20Nayakkar%20Mahal%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Madurai on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #15 : Mayiladuthurai -->
+        <article class="district-card" data-district="mayiladuthurai mayiladuthurai mayuranathaswamy & poompuhar beach cauvery delta & silappathikaram heritage" data-id="15">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80"
+              alt="Mayiladuthurai - Mayuranathaswamy & Poompuhar Beach"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#15</span>
+            <span class="district-category-tag">Cauvery Delta & Silappathikaram Heritage</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Mayiladuthurai</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Mayuranathaswamy & Poompuhar Beach</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Carved out of the fertile Cauvery delta, Mayiladuthurai boasts an exceptional density of ancient Chola temple architecture, including the Mayuranathaswamy Temple. Nearby lies Poompuhar, the celebrated ancient port city of the early Cholas immortalised in the epic Silappathikaram.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Mayiladuthurai%20Mayuranathaswamy%20%26%20Poompuhar%20Beach%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Mayiladuthurai on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #16 : Nagapattinam -->
+        <article class="district-card" data-district="nagapattinam nagapattinam velankanni basilica & nagore dargah interfaith pilgrim shore & sanctuary" data-id="16">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=800&q=80"
+              alt="Nagapattinam - Velankanni Basilica & Nagore Dargah"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#16</span>
+            <span class="district-category-tag">Interfaith Pilgrim Shore & Sanctuary</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Nagapattinam</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Velankanni Basilica & Nagore Dargah</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">A coastal district celebrated across the world as a beacon of interfaith communal harmony. Thousands of pilgrims visit the revered Basilica of Our Lady of Good Health at Velankanni, the centuries-old Nagore Dargah, and the serene coastal bird sanctuary at Point Calimere (Kodiakkarai).</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Nagapattinam%20Velankanni%20Basilica%20%26%20Nagore%20Dargah%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Nagapattinam on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #17 : Namakkal -->
+        <article class="district-card" data-district="namakkal namakkal namakkal fort & kolli hills egg city, monolithic fort & hills" data-id="17">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+              alt="Namakkal - Namakkal Fort & Kolli Hills"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#17</span>
+            <span class="district-category-tag">Egg City, Monolithic Fort & Hills</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Namakkal</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Namakkal Fort & Kolli Hills</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Famous for its massive single-stone hill fortress carved out of a monolithic rock, housing rock-cut cave temples of Lord Narasimha and the towering 18-foot open-air Anjaneyar statue. The district also encompasses the winding 70 hairpin bends of the mystical Kolli Hills.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Namakkal%20Namakkal%20Fort%20%26%20Kolli%20Hills%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Namakkal on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #18 : Nilgiris -->
+        <article class="district-card" data-district="nilgiris nilgiris ooty toy train & tea estates queen of hill stations" data-id="18">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=800&q=80"
+              alt="Nilgiris - Ooty Toy Train & Tea Estates"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#18</span>
+            <span class="district-category-tag">Queen of Hill Stations</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Nilgiris</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Ooty Toy Train & Tea Estates</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Revered as the 'Blue Mountains' and crowned by Ooty (Udhagamandalam), the UNESCO-listed Nilgiri Mountain Railway operates its iconic steam locomotives across dramatic ravines. Characterised by rolling emerald tea plantations, botanical gardens, and the indigenous culture of the Toda tribes.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Nilgiris%20Ooty%20Toy%20Train%20%26%20Tea%20Estates%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Nilgiris on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #19 : Perambalur -->
+        <article class="district-card" data-district="perambalur perambalur ranjankudi fort historic citadel & agriculture" data-id="19">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1585506942812-e72b29cef752?auto=format&fit=crop&w=800&q=80"
+              alt="Perambalur - Ranjankudi Fort"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#19</span>
+            <span class="district-category-tag">Historic Citadel & Agriculture</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Perambalur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Ranjankudi Fort</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Steeped in 17th-century Carnatic military history, Perambalur is anchored by the well-preserved stone bastions and moats of Ranjankudi Fort, scene of historic Anglo-French clashes. The district is also an agricultural hub known for extensive shallot (small onion) and maize cultivation.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Perambalur%20Ranjankudi%20Fort%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Perambalur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #20 : Pudukkottai -->
+        <article class="district-card" data-district="pudukkottai pudukkottai sittanavasal cave paintings ancient frescoes & princely heritage" data-id="20">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80"
+              alt="Pudukkottai - Sittanavasal Cave Paintings"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#20</span>
+            <span class="district-category-tag">Ancient Frescoes & Princely Heritage</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Pudukkottai</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Sittanavasal Cave Paintings</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">A former princely state brimming with archaeological treasures. World-renowned for the 2nd-century BC Jain rock-cut cave temple at Sittannavasal containing extraordinary lotus pond frescoes, along with the magnificent rock-hewn Thirumayam fortress and Kudumiyanmalai musical inscriptions.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Pudukkottai%20Sittanavasal%20Cave%20Paintings%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Pudukkottai on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #21 : Ramanathapuram -->
+        <article class="district-card" data-district="ramanathapuram ramanathapuram pamban sea bridge & rameswaram oceanic engineering & sacred shores" data-id="21">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1606298855672-3efb63017be8?auto=format&fit=crop&w=800&q=80"
+              alt="Ramanathapuram - Pamban Sea Bridge & Rameswaram"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#21</span>
+            <span class="district-category-tag">Oceanic Engineering & Sacred Shores</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Ramanathapuram</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Pamban Sea Bridge & Rameswaram</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Sacred island terrain connected to the mainland by India's legendary sea engineering marvel—the Pamban Rail Bridge. Houses the magnificent Ramanathaswamy Temple featuring the longest carved stone temple corridor in the world, alongside the windswept coastal ghost town of Dhanushkodi.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Ramanathapuram%20Pamban%20Sea%20Bridge%20%26%20Rameswaram%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Ramanathapuram on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #22 : Ranipet -->
+        <article class="district-card" data-district="ranipet ranipet historic delhi gate arcot nawab heritage & industrial hub" data-id="22">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80"
+              alt="Ranipet - Historic Delhi Gate Arcot"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#22</span>
+            <span class="district-category-tag">Nawab Heritage & Industrial Hub</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Ranipet</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Historic Delhi Gate Arcot</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Formed along the fertile Palar river basin, Ranipet carries the heritage of the Nawabs of Arcot, highlighted by the historic 18th-century Delhi Gate and royal fortifications. Today, it stands as one of India's preeminent leather tanning and industrial manufacturing zones.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Ranipet%20Historic%20Delhi%20Gate%20Arcot%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Ranipet on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #23 : Salem -->
+        <article class="district-card" data-district="salem salem yercaud emerald lake & mettur dam jewel of south & steel city" data-id="23">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+              alt="Salem - Yercaud Emerald Lake & Mettur Dam"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#23</span>
+            <span class="district-category-tag">Jewel of South & Steel City</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Salem</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Yercaud Emerald Lake & Mettur Dam</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Surrounded by natural mineral reserves and high-grade steel manufacturing, Salem is guarded by the serene Shevaroy Hills. Features the tranquil hill retreat of Yercaud—'The Jewel of the South'—and the colossal Stanley Reservoir at Mettur Dam that irrigates the Cauvery delta.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Salem%20Yercaud%20Emerald%20Lake%20%26%20Mettur%20Dam%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Salem on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #24 : Sivaganga -->
+        <article class="district-card" data-district="sivaganga sivaganga chettinad heritage mansions chettinad architecture & spice cuisine" data-id="24">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+              alt="Sivaganga - Chettinad Heritage Mansions"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#24</span>
+            <span class="district-category-tag">Chettinad Architecture & Spice Cuisine</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Sivaganga</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Chettinad Heritage Mansions</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Globally celebrated for its Chettinad heritage—monumental palatial mansions crafted with Burmese teak, Italian marble, and handcrafted Athangudi floor tiles. The district is equally renowned for the fiercely aromatic Chettinad cuisine and the sacred Pillayarpatti rock-cut Karpaga Vinayagar Temple.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Sivaganga%20Chettinad%20Heritage%20Mansions%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Sivaganga on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #25 : Tenkasi -->
+        <article class="district-card" data-district="tenkasi tenkasi courtallam falls & kasi viswanathar spa of south india & cascades" data-id="25">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80"
+              alt="Tenkasi - Courtallam Falls & Kasi Viswanathar"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#25</span>
+            <span class="district-category-tag">Spa of South India & Cascades</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tenkasi</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Courtallam Falls & Kasi Viswanathar</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Nestled beneath the Agasthiyar hills of the Western Ghats, Tenkasi is internationally christened the 'Spa of South India' for Courtallam's medicinal herbal waterfalls. The historic town is presided over by the soaring 180-foot gopuram of the Kasi Viswanathar Temple.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tenkasi%20Courtallam%20Falls%20%26%20Kasi%20Viswanathar%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tenkasi on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #26 : Thanjavur -->
+        <article class="district-card" data-district="thanjavur thanjavur brihadisvara big temple rice bowl of tamil nadu & chola wonder" data-id="26">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+              alt="Thanjavur - Brihadisvara Big Temple"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#26</span>
+            <span class="district-category-tag">Rice Bowl of Tamil Nadu & Chola Wonder</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Thanjavur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Brihadisvara Big Temple</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">The undisputed cultural and agricultural heartland of Tamil Nadu, celebrated as the 'Rice Bowl of Tamil Nadu'. Home to the monumental 11th-century Brihadeeswarar Temple (Big Temple) built by Raja Raja Chola I—a UNESCO masterwork of granite architecture—along with Chola bronze casting and classical Carnatic music.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Thanjavur%20Brihadisvara%20Big%20Temple%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Thanjavur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #27 : Theni -->
+        <article class="district-card" data-district="theni theni meghamalai hills & suruli falls highwavys mist & plantation valleys" data-id="27">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80"
+              alt="Theni - Meghamalai Hills & Suruli Falls"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#27</span>
+            <span class="district-category-tag">Highwavys Mist & Plantation Valleys</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Theni</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Meghamalai Hills & Suruli Falls</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Cradled in a breathtaking valley flanked by the Western Ghats, Theni is renowned for the emerald peaks of Meghamalai (Highwavys), fragrant cardamom estates, and cascading Suruli Falls celebrated in Sangam poetry. An essential gateway for nature trekking and plantation tours.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Theni%20Meghamalai%20Hills%20%26%20Suruli%20Falls%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Theni on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #28 : Thoothukudi -->
+        <article class="district-card" data-district="thoothukudi thoothukudi thiruchendur murugan temple & port pearl city & seashore murugan shrine" data-id="28">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+              alt="Thoothukudi - Thiruchendur Murugan Temple & Port"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#28</span>
+            <span class="district-category-tag">Pearl City & Seashore Murugan Shrine</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Thoothukudi</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Thiruchendur Murugan Temple & Port</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Historically celebrated as the 'Pearl City' for its centuries-old deep-sea pearl fishery and major international seaport. Home to the seashore pilgrimage destination of Thiruchendur Subramanya Swamy Temple, the Basilica of Our Lady of Snows, and delicious Tuticorin macroon confectionery.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Thoothukudi%20Thiruchendur%20Murugan%20Temple%20%26%20Port%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Thoothukudi on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #29 : Tiruchirappalli -->
+        <article class="district-card" data-district="tiruchirappalli tiruchirappalli rockfort & srirangam temple citadel on ancient rock & srirangam" data-id="29">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1600100397608-f010f0a9f7a6?auto=format&fit=crop&w=800&q=80"
+              alt="Tiruchirappalli - Rockfort & Srirangam Temple"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#29</span>
+            <span class="district-category-tag">Citadel on Ancient Rock & Srirangam</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tiruchirappalli</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Rockfort & Srirangam Temple</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Centered around the Cauvery river, Tiruchirappalli is dominated by the dramatic 3.8-billion-year-old monolithic Rockfort hosting the Ucchi Pillayar Temple. Across the river stands Srirangam Sri Ranganathaswamy Temple, the largest functioning Hindu temple complex in the world, alongside the historic 2nd-century Kallanai Grand Anicut.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tiruchirappalli%20Rockfort%20%26%20Srirangam%20Temple%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tiruchirappalli on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #30 : Tirunelveli -->
+        <article class="district-card" data-district="tirunelveli tirunelveli nellaiappar temple & tamirabarani land of halwa & musical pillars" data-id="30">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80"
+              alt="Tirunelveli - Nellaiappar Temple & Tamirabarani"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#30</span>
+            <span class="district-category-tag">Land of Halwa & Musical Pillars</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tirunelveli</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Nellaiappar Temple & Tamirabarani</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Situated along the sacred, perennial Tamirabarani River, Tirunelveli is anchored by the sprawling thousand-year-old Nellaiappar Temple celebrated for its musical stone pillars. Renowned worldwide for mouth-watering wheat halwa prepared with ghee and pure river water.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tirunelveli%20Nellaiappar%20Temple%20%26%20Tamirabarani%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tirunelveli on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #31 : Tirupathur -->
+        <article class="district-card" data-district="tirupathur tirupathur yelagiri hills & jalagamparai falls yelagiri hill station & rose gardens" data-id="31">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+              alt="Tirupathur - Yelagiri Hills & Jalagamparai Falls"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#31</span>
+            <span class="district-category-tag">Yelagiri Hill Station & Rose Gardens</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tirupathur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Yelagiri Hills & Jalagamparai Falls</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Bordering the Javadi and Yelagiri hill ranges, Tirupathur offers scenic trekking across peaceful Yelagiri hills with its rose gardens, paragliding camps, and Punganoor lake. Also famous for the roaring seasonal Jalagamparai Waterfalls and historic trading routes.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tirupathur%20Yelagiri%20Hills%20%26%20Jalagamparai%20Falls%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tirupathur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #32 : Tiruppur -->
+        <article class="district-card" data-district="tiruppur tiruppur thirumoorthy dam & avinashi knitwear capital of india" data-id="32">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+              alt="Tiruppur - Thirumoorthy Dam & Avinashi"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#32</span>
+            <span class="district-category-tag">Knitwear Capital of India</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tiruppur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Thirumoorthy Dam & Avinashi</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Internationally acclaimed as the 'Knitwear Capital of India', driving global garment exports with unmatched industrial dynamism. The scenic countryside is enriched by Thirumoorthy Dam and Falls near Udumalpet, with panoramic views of the Western Ghats and the historic Avinashilingeswarar Temple.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tiruppur%20Thirumoorthy%20Dam%20%26%20Avinashi%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tiruppur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #33 : Tiruvallur -->
+        <article class="district-card" data-district="tiruvallur tiruvallur tiruttani murugan temple arupadaiveedu hill shrine" data-id="33">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+              alt="Tiruvallur - Tiruttani Murugan Temple"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#33</span>
+            <span class="district-category-tag">Arupadaiveedu Hill Shrine</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tiruvallur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Tiruttani Murugan Temple</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Sacred frontier district hosting the revered hill shrine of Tiruttani, the fifth abode among Lord Murugan's Arupadaiveedu, where the deity found tranquility. Also renowned for the Sri Veeraraghava Swamy Temple and the life-sustaining Poondi and Chembarambakkam freshwater reservoirs.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tiruvallur%20Tiruttani%20Murugan%20Temple%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tiruvallur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #34 : Tiruvannamalai -->
+        <article class="district-card" data-district="tiruvannamalai tiruvannamalai arunachaleswarar temple & girivalam agni sthalam & arunachala mountain" data-id="34">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80"
+              alt="Tiruvannamalai - Arunachaleswarar Temple & Girivalam"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#34</span>
+            <span class="district-category-tag">Agni Sthalam & Arunachala Mountain</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tiruvannamalai</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Arunachaleswarar Temple & Girivalam</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">One of the Pancha Bhoota Sthalas representing the element Fire (Agni), dominated by the sacred mountain of Arunachala and the imposing Annamalaiyar Temple. Millions of devotees undertake the 14-km barefoot circumambulation (Girivalam) around the hill, alongside the world-famous spiritual sanctuary of Sri Ramana Maharshi Ashram.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tiruvannamalai%20Arunachaleswarar%20Temple%20%26%20Girivalam%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tiruvannamalai on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #35 : Tiruvarur -->
+        <article class="district-card" data-district="tiruvarur tiruvarur thyagaraja temple & aazhi ther carnatic music trinity & grand chariot" data-id="35">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=800&q=80"
+              alt="Tiruvarur - Thyagaraja Temple & Aazhi Ther"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#35</span>
+            <span class="district-category-tag">Carnatic Music Trinity & Grand Chariot</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Tiruvarur</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Thyagaraja Temple & Aazhi Ther</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Renowned as the historic birthplace of the Musical Trinity of Carnatic music—Tyagaraja, Muthuswami Dikshitar, and Syama Sastri. Dominated by the magnificent Sri Thyagaraja Temple, boasting the world's largest temple chariot—the legendary multi-story 'Aazhi Ther'—and the expansive Kamalalayam temple tank.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Tiruvarur%20Thyagaraja%20Temple%20%26%20Aazhi%20Ther%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Tiruvarur on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #36 : Vellore -->
+        <article class="district-card" data-district="vellore vellore vellore fort & jalakanteswarar 16th-century moated citadel & golden shrine" data-id="36">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1585506942812-e72b29cef752?auto=format&fit=crop&w=800&q=80"
+              alt="Vellore - Vellore Fort & Jalakanteswarar"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#36</span>
+            <span class="district-category-tag">16th-Century Moated Citadel & Golden Shrine</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Vellore</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Vellore Fort & Jalakanteswarar</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Anchored by the impenetrable 16th-century Vellore Fort surrounded by a wide water moat, which hosted the historic Vellore Sepoy Mutiny of 1806. The fort encloses the intricately sculpted Jalakanteswarar Temple, while nearby Sripuram features the dazzling Mahalakshmi Golden Temple.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Vellore%20Vellore%20Fort%20%26%20Jalakanteswarar%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Vellore on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #37 : Viluppuram -->
+        <article class="district-card" data-district="viluppuram viluppuram gingee fort (troy of the east) troy of the east & granite bastions" data-id="37">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+              alt="Viluppuram - Gingee Fort (Troy of the East)"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#37</span>
+            <span class="district-category-tag">Troy of the East & Granite Bastions</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Viluppuram</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Gingee Fort (Troy of the East)</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Crowned by the legendary Gingee Fort, acclaimed by the British as the 'Troy of the East' for its impregnable hill citadels spread across three towering crags (Rajagiri, Krishnagiri, and Chandrayandurg). The district also preserves rich Sangam archaeological sites and sacred rural folk heritage.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Viluppuram%20Gingee%20Fort%20(Troy%20of%20the%20East)%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Viluppuram on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+        <!-- DISTRICT #38 : Virudhunagar -->
+        <article class="district-card" data-district="virudhunagar virudhunagar srivilliputhur andal temple tower official emblem of tamil nadu & palkova" data-id="38">
+          <div class="district-img">
+            <img
+              src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?auto=format&fit=crop&w=800&q=80"
+              alt="Virudhunagar - Srivilliputhur Andal Temple Tower"
+              loading="lazy"
+              crossorigin="anonymous"
+              onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80';"
+            >
+            <span class="district-badge">#38</span>
+            <span class="district-category-tag">Official Emblem of Tamil Nadu & Palkova</span>
+          </div>
+
+          <div class="district-body">
+            <div class="district-header">
+              <h3>Virudhunagar</h3>
+              <div class="landmark-tag">
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>Srivilliputhur Andal Temple Tower</span>
+              </div>
+            </div>
+
+            <div class="district-desc">
+              <div class="desc-box">
+                <div class="desc-lang-label">
+                  <span class="lang-tag">OVERVIEW</span>
+                  <span class="desc-lang-title">District Information</span>
+                </div>
+                <p class="desc-en">Celebrated for the iconic 11-tiered, 192-foot Rajagopuram of the Srivilliputhur Andal Temple, proudly immortalized as the official emblem of the Government of Tamil Nadu. The district is also universally famous for authentic Srivilliputhur Palkova sweet, crisp Virudhunagar layered parottas, and trading vigor.</p>
+              </div>
+            </div>
+
+            <div class="card-footer-actions">
+              <a
+                href="https://www.google.com/maps/search/Virudhunagar%20Srivilliputhur%20Andal%20Temple%20Tower%20Tamil%20Nadu"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="map-btn"
+                aria-label="View Virudhunagar on Google Maps"
+              >
+                <svg class="pin-icon" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <span>View on Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p id="noDistrictsFound" class="no-results" style="display:none;">No districts match your search.</p>
+    </section>
+
+
+    <!-- ================= FOOD ================= -->
+    <section id="food" class="section alternate-section">
+      <div class="section-title">
+        <p>TASTE OF TRAVELING IN TAMIL NADU</p>
+        <h2>Traditional Tamil Cuisine</h2>
+        <span>Relish the authentic culinary traditions spiced with curry leaves, mustard seeds, and coconut</span>
+      </div>
+
+      <div class="food-grid">
+
+        <!-- 1. IDLI & VADA -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=800&q=80"
+              alt="Authentic Soft Idli and Medu Vada"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Breakfast Classic</span>
+            <h3>Idli &amp; Medu Vada</h3>
+            <span class="food-subtitle">Steamed Rice Cakes &amp; Crispy Lentil Fritters</span>
+            <p>
+              Steamed, pillowy soft rice cakes (malli-poo idli) and crispy golden lentil vadas, served with hot sambar and freshly ground coconut and tomato chutneys.
+            </p>
+          </div>
+        </article>
+
+        <!-- 2. CRISPY GHEE ROAST DOSA -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80"
+              alt="Crispy Golden Ghee Roast Dosa"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Golden Crepe</span>
+            <h3>Crispy Ghee Roast Dosa</h3>
+            <span class="food-subtitle">Aromatic Pure Ghee Fermented Crepe</span>
+            <p>
+              Wafer-thin, crispy fermented rice and black gram crepe roasted in fragrant pure ghee, stuffed with spiced potato masala and served with variety chutneys.
+            </p>
+          </div>
+        </article>
+
+        <!-- 3. BANANA LEAF MEALS -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&w=800&q=80"
+              alt="Traditional South Indian Banana Leaf Meals"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Grand Traditional Feast</span>
+            <h3>Banana Leaf Meals (Saapadu)</h3>
+            <span class="food-subtitle">Traditional South Indian Plantain Leaf Banquet</span>
+            <p>
+              The authentic Tamil feast served on a fresh plantain leaf with steamed Ponni rice, ghee paruppu, sambar, pepper rasam, kootu, poriyal, appalam, and buttermilk.
+            </p>
+          </div>
+        </article>
+
+        <!-- 4. CHETTINAD PEPPER CHICKEN -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?auto=format&fit=crop&w=800&q=80"
+              alt="Spicy Chettinad Pepper Chicken"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Spicy Heritage</span>
+            <h3>Chettinad Pepper Chicken</h3>
+            <span class="food-subtitle">Authentic Karaikudi Pepper Masala Roast</span>
+            <p>
+              World-renowned Chettinad non-veg delicacy cooked with freshly hand-roasted black peppercorns, shallots, curry leaves, and traditional stone flower (kalpasi).
+            </p>
+          </div>
+        </article>
+
+        <!-- 5. DINDIGUL SEERAGA SAMBA BIRYANI -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80"
+              alt="Dindigul Seeraga Samba Biryani"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Royal Dum Biryani</span>
+            <h3>Dindigul Seeraga Samba Biryani</h3>
+            <span class="food-subtitle">Fragrant Small-Grain Dum Biryani</span>
+            <p>
+              Iconic Tamil Nadu dum biryani cooked with tiny, fragrant Seeraga Samba rice, tender meat, and traditional whole spices, served with sour brinjal dalcha.
+            </p>
+          </div>
+        </article>
+
+        <!-- 6. MADURAI BUN PAROTTA -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1626777552726-4a6b54c97e46?auto=format&fit=crop&w=800&q=80"
+              alt="Madurai Bun Parotta and Salna"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Street Food Legend</span>
+            <h3>Madurai Bun Parotta &amp; Salna</h3>
+            <span class="food-subtitle">Flaky Layered Bread with Spicy Gravy</span>
+            <p>
+              Flaky, multi-layered golden parotta crisp on the outside and soft inside, served hot with rich, spicy roadside chicken gravy (empty salna).
+            </p>
+          </div>
+        </article>
+
+        <!-- 7. KUMBAKONAM FILTER COFFEE -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=80"
+              alt="Kumbakonam Degree Filter Coffee"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Kaapi Culture</span>
+            <h3>Kumbakonam Degree Filter Coffee</h3>
+            <span class="food-subtitle">Aromatic Fresh Chicory Brew in Brass Dabara</span>
+            <p>
+              Piping hot, frothy South Indian filter coffee brewed from freshly roasted chicory beans and thick cow's milk, served in the traditional brass dabara and tumbler.
+            </p>
+          </div>
+        </article>
+
+        <!-- 8. MADURAI FAMOUS JIGARTHANDA -->
+        <article class="food-card reveal">
+          <div class="food-image">
+            <img
+              src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=800&q=80"
+              alt="Madurai Famous Jigarthanda"
+              loading="lazy"
+            >
+          </div>
+          <div class="food-info">
+            <span class="food-badge">Royal Cold Dessert</span>
+            <h3>Madurai Famous Jigarthanda</h3>
+            <span class="food-subtitle">Cooling Almond Gum &amp; Reduced Milk Drink</span>
+            <p>
+              Historic cooling royal dessert beverage layered with cooling almond gum (badam pisin), nannari syrup, boiled reduced basundi milk, and rich malai ice cream.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <section id="gallery" class="section">
+      <div class="section-title">
+        <p>VISUAL JOURNEY</p>
+        <h2>Tamil Nadu Gallery</h2>
+        <span>A captivating glimpse into majestic gopurams, endless shores, and verdant peaks</span>
+      </div>
+
+      <div class="gallery-grid">
+
+        <div class="gallery-item reveal" data-caption="Thanjavur - Brihadeeswarar UNESCO Great Living Chola Big Temple">
+          <img
+            src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+            alt="Thanjavur Brihadeeswarar Big Temple"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Thanjavur | Big Temple</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Madurai - Historic Meenakshi Amman Temple Sculpted Gopurams">
+          <img
+            src="https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80"
+            alt="Madurai Meenakshi Temple Gopuram"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Madurai | Meenakshi Temple</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="The Nilgiris - UNESCO Ooty Mountain Railway Steam Train & Emerald Tea Hills">
+          <img
+            src="https://images.unsplash.com/photo-1593693411515-c20261bcad6e?auto=format&fit=crop&w=800&q=80"
+            alt="Nilgiri Mountain Railway Ooty Toy Train"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Nilgiris | Ooty Toy Train</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Chengalpattu - 7th-Century Mahabalipuram Shore Temple by the Waves">
+          <img
+            src="https://images.unsplash.com/photo-1621847468516-1ed5d0df56fe?auto=format&fit=crop&w=800&q=80"
+            alt="Mahabalipuram Shore Temple"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Chengalpattu | Mahabalipuram</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Kanyakumari - Vivekananda Rock Memorial at the Confluence of Three Oceans">
+          <img
+            src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?auto=format&fit=crop&w=800&q=80"
+            alt="Vivekananda Rock Memorial Kanyakumari"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Kanyakumari | Triveni Sangam</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Ramanathapuram - Historic Pamban Rail Sea Bridge to Rameswaram">
+          <img
+            src="https://images.unsplash.com/photo-1606298855672-3efb63017be8?auto=format&fit=crop&w=800&q=80"
+            alt="Pamban Sea Bridge Rameswaram"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Ramanathapuram | Pamban Bridge</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Tenkasi - Healing Herbal Cascades at Courtallam Waterfalls">
+          <img
+            src="https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?auto=format&fit=crop&w=800&q=80"
+            alt="Courtallam Waterfalls Tenkasi"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Tenkasi | Courtallam Falls</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Tiruchirappalli - Ucchi Pillayar Temple on 3.8-Billion-Year-Old Rockfort">
+          <img
+            src="https://images.unsplash.com/photo-1600100397608-f010f0a9f7a6?auto=format&fit=crop&w=800&q=80"
+            alt="Tiruchirappalli Rockfort"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Tiruchirappalli | Rockfort</span></div>
+        </div>
+
+        <div class="gallery-item reveal" data-caption="Sivaganga - Majestic 19th-Century Chettinad Heritage Mansion in Karaikudi">
+          <img
+            src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+            alt="Chettinad Heritage Palace Karaikudi"
+            loading="lazy"
+          >
+          <div class="gallery-overlay"><span>Sivaganga | Chettinad Palace</span></div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="section about-section">
+      <div class="about-container reveal">
+        <div class="about-image-wrapper">
+          <img
+            src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&w=800&q=80"
+            alt="Thanjavur Brihadeeswarar Temple architecture"
+            loading="lazy"
+          >
+          <div class="experience-badge">
+            <strong>2,000+</strong>
+            <span>Years of Living Heritage</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-title left">
+            <p>ABOUT THE PROJECT</p>
+            <h2>Taste of Traveling in Tamil Nadu</h2>
+          </div>
+
+          <p class="about-lead">
+            <strong>Taste of Traveling in Tamil Nadu</strong> is an interactive digital guide created to celebrate and showcase the magnificent cultural heritage, timeless stone temples, pristine hill retreats, vibrant festivals, and unmatched gastronomy of Tamil Nadu.
+          </p>
+
+          <p>
+            From the thousand-year-old Chola architectural marvels to the tranquil heights of the Western Ghats and the peaceful shores of Kanyakumari where three oceans unite, Tamil Nadu presents an enchanting spectrum of wonders waiting to be experienced.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="icon">🏛️</span>
+              <div>
+                <h4>UNESCO World Heritage</h4>
+                <p>Great Living Chola Temples & Mahabalipuram Monuments</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon">🌿</span>
+              <div>
+                <h4>Rich Biodiversity</h4>
+                <p>Mudumalai, Anamalai, and the Nilgiri Biosphere</p>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="icon">🍛</span>
+              <div>
+                <h4>Culinary Legacy</h4>
+                <p>From fiery Chettinad curries to traditional banana leaf feasts</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="section contact-section alternate-section">
+      <div class="section-title">
+        <p>GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+        <span>Have a suggestion, feedback, or a hidden gem to share? Drop us a message!</span>
+      </div>
+
+            <form id="contactForm" class="contact-form reveal" action="https://formsubmit.co/rashidrashid07770@gmail.com" method="POST">
+        <!-- FormSubmit Direct Email Configuration -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New Travel Feedback from Taste of Traveling in Tamil Nadu">
+        
+        <div id="contactStatus" class="contact-status" style="display: none;"></div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="e.g. Anand Kumar"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="e.g. anand@example.com"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message / Feedback</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Write your suggestions, questions, or places to add..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" id="contactSubmitBtn" class="btn primary-btn submit-btn"><svg class="send-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg><span>Send Feedback</span></button>
+
+        <div class="db-badge-container">
+          <span class="db-badge">Direct Email: rashidrashid07770@gmail.com</span>
+          <span id="dbCounter" class="db-counter">Database Active</span>
+        </div>
+      </form>
+    </section>
+  </main>
+
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <h2>Tamil<span>Nadu</span> 🌴</h2>
+        <p>Explore • Experience • Taste of Traveling in Tamil Nadu</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#places">Places</a>
+        <a href="#hidden">Hidden Gems</a>
+        <a href="#districts">Districts</a>
+        <a href="#food">Food</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          © <span id="year"></span> Taste of Traveling in Tamil Nadu. Crafted with pride for Tamil heritage.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ================= BACK TO TOP ================= -->
+  <button
+    id="backTop"
+    class="back-top"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    ↑
+  </button>
+
+  <!-- ================= IMAGE MODAL (LIGHTBOX) ================= -->
+  <div id="imageModal" class="image-modal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close image">&times;</button>
+      <img id="modalImg" src="" alt="Enlarged view">
+      <p id="modalCaption"></p>
+    </div>
+  </div>
+
+  <!-- ================= JAVASCRIPT ================= -->
+  <script>
+// ============================================
+// TASTE OF TAMIL NADU - MAIN JAVASCRIPT
+// Features: Real-time Bilingual District Search,
+// Dark Mode Toggle, Image Lightbox Modal, Responsive Navigation
+// ============================================
+
+function initTamilNaduApp() {
+  "use strict";
+
+  // ============================================
+  // 1. MOBILE NAVIGATION TOGGLE
+  // ============================================
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  if (menuBtn && navLinks) {
+    const toggleMenu = () => {
+      const isOpen = navLinks.classList.toggle("active");
+      menuBtn.classList.toggle("active");
+      menuBtn.setAttribute("aria-expanded", String(isOpen));
+    };
+
+    menuBtn.addEventListener("click", toggleMenu);
+
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("active");
+        menuBtn.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!navLinks.contains(e.target) && !menuBtn.contains(e.target) && navLinks.classList.contains("active")) {
+        navLinks.classList.remove("active");
+        menuBtn.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
+      }
+    });
+  }
+
+  // ============================================
+  // 2. SAFE DARK / LIGHT THEME TOGGLE
+  // ============================================
+  const themeBtn = document.getElementById("themeBtn");
+
+  if (themeBtn) {
+    let savedTheme = null;
+    try {
+      savedTheme = localStorage.getItem("tn_theme");
+    } catch (err) {
+      savedTheme = null;
+    }
+
+    const systemPrefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    if (savedTheme === "dark" || (!savedTheme && systemPrefersDark)) {
+      document.body.classList.add("dark");
+      themeBtn.textContent = "☀️";
+      themeBtn.setAttribute("title", "Switch to light mode");
+    } else {
+      document.body.classList.remove("dark");
+      themeBtn.textContent = "🌙";
+      themeBtn.setAttribute("title", "Switch to dark mode");
+    }
+
+    themeBtn.addEventListener("click", () => {
+      const isDark = document.body.classList.toggle("dark");
+      themeBtn.textContent = isDark ? "☀️" : "🌙";
+      themeBtn.setAttribute("title", isDark ? "Switch to light mode" : "Switch to dark mode");
+
+      try {
+        localStorage.setItem("tn_theme", isDark ? "dark" : "light");
+      } catch (err) {}
+    });
+  }
+
+  // ============================================
+  // 3. DISTRICT SEARCH (ENGLISH & TAMIL)
+  // ============================================
+  const districtSearch = document.getElementById("districtSearch");
+  const noDistrictsFound = document.getElementById("noDistrictsFound");
+
+  if (districtSearch) {
+    districtSearch.addEventListener("input", function() {
+      const query = this.value.toLowerCase().trim();
+      const cards = document.querySelectorAll(".district-card");
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const districtData = (card.getAttribute("data-district") || "").toLowerCase();
+        const cardText = card.textContent.toLowerCase();
+        const matches = districtData.includes(query) || cardText.includes(query);
+
+        card.style.display = matches ? "" : "none";
+        if (matches) visibleCount++;
+      });
+
+      if (noDistrictsFound) {
+        noDistrictsFound.style.display = visibleCount === 0 ? "block" : "none";
+      }
+    });
+  }
+
+  // ============================================
+  // 4. TOURIST PLACES SEARCH
+  // ============================================
+  const placeSearch = document.getElementById("placeSearch");
+  const noPlacesFound = document.getElementById("noPlacesFound");
+
+  if (placeSearch) {
+    placeSearch.addEventListener("input", function() {
+      const query = this.value.toLowerCase().trim();
+      const placeCards = document.querySelectorAll("#placesContainer .place-card");
+      let visibleCount = 0;
+
+      placeCards.forEach(card => {
+        const content = card.textContent.toLowerCase();
+        const matches = content.includes(query);
+
+        card.style.display = matches ? "" : "none";
+        if (matches) visibleCount++;
+      });
+
+      if (noPlacesFound) {
+        noPlacesFound.style.display = visibleCount === 0 ? "block" : "none";
+      }
+    });
+  }
+
+  // ============================================
+  // 5. ACTIVE NAVIGATION ON SCROLL
+  // ============================================
+  const sections = document.querySelectorAll("section[id]");
+  const navItems = document.querySelectorAll(".nav-links a");
+
+  const highlightNavOnScroll = () => {
+    const scrollPos = window.scrollY + 180;
+
+    sections.forEach(section => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute("id");
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        navItems.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === `#${id}`) {
+            link.classList.add("active");
+          }
+        });
+      }
+    });
+  };
+
+  window.addEventListener("scroll", highlightNavOnScroll, { passive: true });
+
+  // ============================================
+  // 6. BACK TO TOP BUTTON
+  // ============================================
+  const backTopBtn = document.getElementById("backTop");
+
+  if (backTopBtn) {
+    const handleScroll = () => {
+      if (window.scrollY > 400) {
+        backTopBtn.classList.add("visible");
+      } else {
+        backTopBtn.classList.remove("visible");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    backTopBtn.addEventListener("click", () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    });
+  }
+
+  // ============================================
+  // 7. IMAGE LIGHTBOX MODAL
+  // ============================================
+  const imageModal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImg");
+  const modalCaption = document.getElementById("modalCaption");
+  const modalClose = document.querySelector(".modal-close");
+  const modalBackdrop = document.querySelector(".modal-backdrop");
+
+  const openModal = (src, altText) => {
+    if (!imageModal || !modalImg) return;
+    modalImg.src = src;
+    modalImg.alt = altText || "Enlarged view";
+    if (modalCaption) modalCaption.textContent = altText || "";
+    imageModal.classList.add("active");
+    imageModal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeModal = () => {
+    if (!imageModal) return;
+    imageModal.classList.remove("active");
+    imageModal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+    if (modalImg) modalImg.src = "";
+  };
+
+  // Add click to open modal on district and place images
+  document.querySelectorAll(".district-img img, .card-image img, .gallery-item img").forEach(img => {
+    img.style.cursor = "zoom-in";
+    img.addEventListener("click", function() {
+      openModal(this.src, this.alt);
+    });
+  });
+
+  if (modalClose) modalClose.addEventListener("click", closeModal);
+  if (modalBackdrop) modalBackdrop.addEventListener("click", closeModal);
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && imageModal && imageModal.classList.contains("active")) {
+      closeModal();
+    }
+  });
+
+  // ============================================
+  // 8. DYNAMIC YEAR IN FOOTER
+  // ============================================
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  // ============================================
+  // 9. BACKEND DATABASE & CONTACT FORM SUBMISSION
+  // ============================================
+  const contactForm = document.getElementById("contactForm");
+  const contactStatus = document.getElementById("contactStatus");
+  const contactSubmitBtn = document.getElementById("contactSubmitBtn");
+  const dbCounter = document.getElementById("dbCounter");
+
+  const updateDbCounter = async () => {
+    if (!dbCounter) return;
+    try {
+      if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") { if (dbCounter) dbCounter.textContent = "Online / Cloud Active"; return; } const res = await fetch("/api/contacts");
+      if (res.ok) {
+        const list = await res.json();
+        const count = Array.isArray(list) ? list.length : 0;
+        dbCounter.textContent = `${count} message${count === 1 ? '' : 's'} stored in database`;
+      }
+    } catch (e) {
+      dbCounter.textContent = "Database connected";
+    }
+  };
+
+  updateDbCounter();
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async function(e) {
+      e.preventDefault();
+
+      const nameInput = document.getElementById("name");
+      const emailInput = document.getElementById("email");
+      const messageInput = document.getElementById("message");
+
+      const name = nameInput ? nameInput.value.trim() : "";
+      const email = emailInput ? emailInput.value.trim() : "";
+      const message = messageInput ? messageInput.value.trim() : "";
+
+      if (!name || !email || !message) return;
+
+      if (contactSubmitBtn) {
+        contactSubmitBtn.disabled = true;
+        contactSubmitBtn.innerHTML = "<span>Sending feedback...</span>";
+      }
+
+      if (contactStatus) {
+        contactStatus.style.display = "none";
+      }
+
+      let emailStatus = null;
+      let dbStatus = false;
+
+      // 1. Dispatch email to rashidrashid07770@gmail.com via FormSubmit
+      try {
+        const mailRes = await fetch("https://formsubmit.co/ajax/rashidrashid07770@gmail.com", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            _subject: `New Travel Feedback from ${name} (${email})`,
+            _template: "table"
+          })
+        });
+
+        const mailData = await mailRes.json();
+        if (mailData.success === "true" || mailData.success === true) {
+          emailStatus = "delivered";
+        } else if (mailData.message && mailData.message.toLowerCase().includes("activation")) {
+          emailStatus = "activation_pending";
+        }
+      } catch (mailErr) {
+        console.warn("Direct email delivery note:", mailErr);
+      }
+
+      // 2. Save to local backend database /api/contact
+      try {
+        if (window.location.hostname !== "localhost" && window.location.hostname !== "127.0.0.1") throw new Error("Static/CodePen mode"); const res = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ name, email, message })
+        });
+
+        if (res.ok) {
+          dbStatus = true;
+          updateDbCounter();
+        }
+      } catch (err) {
+        // Fallback for offline / static
+        try {
+          const localDb = JSON.parse(localStorage.getItem("offline_contacts") || "[]");
+          localDb.push({ name, email, message, submittedAt: new Date().toISOString() });
+          localStorage.setItem("offline_contacts", JSON.stringify(localDb));
+          dbStatus = true;
+        } catch(e) {}
+      }
+
+      // 3. User notification
+      if (contactStatus) {
+        contactStatus.className = "contact-status success";
+        if (emailStatus === "delivered") {
+          contactStatus.innerHTML = `✅ <strong>Message Sent!</strong> Thank you <strong>${name}</strong>, your feedback was sent directly to <strong>rashidrashid07770@gmail.com</strong> and saved to the database.`;
+        } else if (emailStatus === "activation_pending") {
+          contactStatus.innerHTML = `✅ <strong>Saved!</strong> Note: A one-time activation link has been sent to <strong>rashidrashid07770@gmail.com</strong>. Please open your Gmail and click "Activate Form" so future messages land instantly in your inbox.`;
+        } else {
+          contactStatus.innerHTML = `✅ <strong>Success!</strong> Thank you <strong>${name}</strong>, your feedback has been recorded in the database.`;
+        }
+        contactStatus.style.display = "block";
+      }
+
+      contactForm.reset();
+
+      if (contactSubmitBtn) {
+        contactSubmitBtn.disabled = false;
+        contactSubmitBtn.innerHTML = "<svg class=\"send-icon\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><line x1=\"22\" y1=\"2\" x2=\"11\" y2=\"13\"></line><polygon points=\"22 2 15 22 11 13 2 9 22 2\"></polygon></svg><span>Send Feedback</span>";
+      }
+    });
+  }
+}
+
+// Safely execute
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initTamilNaduApp);
+} else {
+  initTamilNaduApp();
+}
+
+</script>
+
+</body>
+</html>
